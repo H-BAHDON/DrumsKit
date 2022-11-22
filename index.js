@@ -1,7 +1,11 @@
 
-  document.querySelector("button").addEventListener("click", buttonClick);
+  numberOfDrums = document.querySelectorAll(".drum").length;
 
-  function buttonClick(){
-  alert("hello there")
 
+      function runAlert() {
+        alert("hello son");
+      }
+
+  for (var i = 0; i < numberOfDrums; i++) {
+    document.querySelectorAll(".drum")[i].addEventListener("click", runAlert);
   }
